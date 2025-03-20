@@ -1,7 +1,211 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.max-container {
+    width: 1200px;
+    height: auto;
+}
+
+section {
+    width: 100%;
+}
+
+.head {
+    width: 100%;
+    height: 100px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: white;
+}
+
+.head .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.head .logo h1 {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head .logo p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.head-elements nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.head-elements nav ul a {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    position: relative;
+}
+
+.head-elements nav ul a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 00%;
+    height: 1px;
+    background: black;
+    transition: 0.3s ease;
+}
+
+.head-elements nav ul a:hover::before {
+    width: 100%;
+}
+
+.head-elements nav ul .head-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: 0.3s ease;
+}
+
+.head-elements nav ul .head-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.home-section {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.home-section .max-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.home-soical-l,
+.home-soical-r {
+    flex: 1;
+}
+
+.home-soical-r {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-soical-l{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.home-soical-l .soical-l-head {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.home-soical-l .soical-l-head h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.home-soical-l .soical-l-head h1 span {
+    background-color: yellow;
+    padding: 2px 5px;
+    color: black;
+}
+
+.home-soical-l .soical-l-head .soical-l-head-btn {
+    background-color: yellow;
+    color: black;
+    width: 200px;
+    padding: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid yellow;
+    transition: 0.3s ease;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.social-l-main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.social-l-main-main-referense{
+    display: flex;
+    gap: 20px;
+}
+
+.social-l-main-main-referense-item h1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px 0;
+}
